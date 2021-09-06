@@ -1,0 +1,74 @@
+@import url(./fonts.css);
+
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 100%; // { 62.5 * 16 }/100 :: 1rem = 10px, so font-size is 62.5%  100(100%)/16(browser pixel value)*10(required font size value we want) = 62.5%
+
+  // From here onwards you can change only the styling of "HTML" tag 
+  // eg: font-size: 50% and can add more, etc
+
+  // (y(px) * 100)/16 === X% 
+  // eg: (16px * 100)/16 === 100%
+  // eg: (10px * 100)/ 16 ==== 62.5%
+
+  scroll-behavior: smooth;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 400;
+}
+
+ol, ul{
+  padding: 0px;
+  margin: 0px;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl{
+  padding-right: 0px;
+  padding-left: 0px;
+}
+
+.navbar >.container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl{
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link{
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.navbar-brand{
+  padding-top: 0px;
+  padding-bottom: 0px;
+  margin-right: 0px;  
+}
+
+@import "partials/variables";
+@import "partials/global";
+@import "components/header";
+@import "components/banner";
+@import "components/aboutus";
+@import "components/skill";
+@import "components/service";
+@import "components/projects";
+@import "responsive/responsive";
+@import "footer/footer";

@@ -1,0 +1,26 @@
+footer{
+
+    .footer-area{
+        padding: 5rem 0;
+        background: url(../../img/footer-bg.png) no-repeat;
+
+    .social{
+
+        h5{
+            font: normal 500 23px/ 30px var(--source-Sans-Pro);
+        }
+
+        a{
+            i{
+                font-size:22px;
+                padding: 2rem;
+                color: var(--border-color);
+            }
+
+            &:hover i{
+                color: var(--primary-color);
+            }
+        }
+    }
+    }
+}

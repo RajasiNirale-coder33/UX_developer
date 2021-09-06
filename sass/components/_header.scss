@@ -1,0 +1,35 @@
+.header_menu{
+    .main-menu{
+        .navbar{
+            padding: 2rem 0;
+
+            .nav-item{
+
+                &:not(:last-child){
+                    margin-right: 2rem;
+                }
+
+                .nav-link{
+                    font: normal 600 100% var(--source-Sans-Pro);
+                    text-transform: uppercase;
+                    color:var(--navbar-text-color);
+                    letter-spacing: 0.2rem;
+                }
+
+                .active{
+                    background: var(--gradient-color);
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    background-clip: text;
+                }
+
+                a:hover{
+                    background: var(--gradient-color);
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    background-clip: text;
+                }
+            }
+        }
+    }
+}

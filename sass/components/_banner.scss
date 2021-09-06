@@ -1,0 +1,45 @@
+.site-main{
+    position: relative;
+    .site-banner{
+        padding: 6rem 0;
+        position: relative;
+
+        & .home-banner{
+            position: absolute;
+            top: 0%;
+            left: 0;
+            z-index: -200;
+        }
+
+        & img{
+            margin-top: 3rem;
+        }
+        
+        .site-title{
+            padding-top: 6rem;
+            h3,h4,h1{font-weight: var(--font-weight); letter-spacing: 0.2rem; margin-bottom: 1rem;}
+
+            position: relative;
+
+            h3{
+                &::after{
+                    content: "";
+                    display: inline-block;
+                    width: 20rem;
+                    height: 3px;
+                    background-color: var(--bg-color);
+                    margin-left: 1.5rem;
+                    transform: translateY(-0.3rem);
+                }
+            }
+
+            h1{
+                font-size: 5rem;
+            }
+
+            h4{
+                font-size: 150%;
+            }
+        }
+    }
+}
